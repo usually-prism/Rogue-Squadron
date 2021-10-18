@@ -2,23 +2,10 @@
 
     <header>
         <img src = "resources/lwc.png" alt = "Compnay Logo">
-        <h2>Redgrass Gaming</h2>
-        <p>  Contact Us </p>
-        <p> Where to Buy</p>
     </header>
-<lightning-tabset active-tab-value="one">
-    <lightning-tab label="Our Products"  value="one">
-
-    </lightning-tab>
-    <lightning-tab label="Item Two" title="2nd tab extended title" value="two">
-        Two Content !
-    </lightning-tab>
-    <lightning-tab label="Item Three" value="three">
-        Three Content !
-    </lightning-tab>
-</lightning-tabset>
 
 <div class="center">
+    <template if:true={clickedWet}>
     <div class="slds-size_3-of-4">
         <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"> 
             <lightning-carousel>
@@ -30,7 +17,67 @@
                     href = "javascript:void(0);">
                 </lightning-carousel-image>
                 <lightning-carousel-image
+                    src = "resources/wet.jpg"
+                    header = "Redgrass Gaming fine hair brushes"
+                    description = "Second card description."
+                    alternative-text = "Second card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "resources/wet.jpg"
+                    header = "Ergonomic Support Handle"
+                    description = "Third card description."
+                    alternative-text = "Third card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+            </lightning-carousel>
+        </div>
+    </div>
+</template> 
+
+<template if:true={clickedHolder}>
+    <div class="slds-size_3-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"> 
+            <lightning-carousel>
+                <lightning-carousel-image
                     src = "resources/handle.jpg"
+                    header = "Everlasting Wet Palette"
+                    description = "Our industry leading wet palette"
+                    alternative-text = "First card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "resources/handle.jpg"
+                    header = "Redgrass Gaming fine hair brushes"
+                    description = "Second card description."
+                    alternative-text = "Second card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "resources/handle.jpg"
+                    header = "Ergonomic Support Handle"
+                    description = "Third card description."
+                    alternative-text = "Third card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+            </lightning-carousel>
+        </div>
+    </div>
+</template> 
+
+<template if:true={clickedBrush}>
+    <div class="slds-size_3-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"> 
+            <lightning-carousel>
+                <lightning-carousel-image
+                    src = "resources/brushes.jpg"
+                    header = "Everlasting Wet Palette"
+                    description = "Our industry leading wet palette"
+                    alternative-text = "First card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "resources/brushes.jpg"
                     header = "Redgrass Gaming fine hair brushes"
                     description = "Second card description."
                     alternative-text = "Second card accessible description."
@@ -46,10 +93,13 @@
             </lightning-carousel>
         </div>
     </div>
+</template> 
 </div>
 
  <div class = "bottom">
-
+    <lightning-button variant="Wet Palette" label="Wet Palette" title="Primary action" onclick={handleWet} class="slds-m-left_x-small">Wet Pallette</lightning-button>
+    <lightning-button variant="Brushes" label="Brushes" title="Primary action" onclick={handleBrush} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="Painting Handle" label="Painting Handle" title="Primary action" onclick={handleHandle} class="slds-m-left_x-small"></lightning-button>
  </div>
  <div class = "left">
 
