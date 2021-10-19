@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
     <!-- LWC sample component <my-greeting> -->
     <template if:true={displayMarkup}>
         <div class="center greeting">
@@ -39,4 +40,67 @@
     </template>
 
     <button class="slds-button slds-button_brand" onclick={changeDisplay}>Change Display</button> 
+=======
+<div class="logo">
+<img src="/src/resources/roadside-assistance.jpg">
+<h1>Rockland Autocare</h1>
+</div>
+<br>
+<center><my-greeting></my-greeting></center>
+<br>
+<!--3 cards-->
+<center>
+<div class="kcards">
+        <div class="kcard">
+    <lightning-card  title="One Time Service Call">
+        
+        <p class="slds-p-horizontal_small">Haven't decided on a membership?<br> No problem! <br>
+            We offer a onetime service option as well. 
+        </p>
+        <p slot="footer"></p>
+        <p><lightning-button label="Learn More" slot="actions" class="buttin"  onclick={handleClick}></lightning-button></p>
+    </lightning-card>
+    </div>
+    <div class="kcard">
+    <lightning-card  title="Membership Plan">
+        
+        <p class="slds-p-horizontal_small">Subscribe as a member today! <br> Experience a premium discount, <br> 
+        frequent check-ups and discounts <br> on all auto-care related needs. </p>
+        <p slot="footer"></p>
+        <p><lightning-button label="Learn More" slot="actions" class="buttin"  onclick={handleClick}></lightning-button></p>
+    </lightning-card>
+    </div>
+    <div class="kcard">
+        <lightning-card  title="Join The Fleet">
+            
+            <p class="slds-p-horizontal_small">Become a mechanic for <br> Rockland Autocare! <br> 
+            Enjoy competitive <br> pay and membership priviledges.</p>
+            <p slot="footer"></p>
+            <p><lightning-button label="Learn More" slot="actions" class="buttin"  onclick={handleClick}></lightning-button></p>
+        </lightning-card>
+        </div>
+</div>
+</center> 
+
+<!-- our story-->
+<div class="ourstory">
+<h2>
+    Our Story
+</h2>
+Our story starts with Lennox Rockland,<br> proud auto-mechanic of the original<br> Rockland Autocare location.
+That was nearly <br>fifty years ago. Today however,<br> stemming off of the massive<br> success of his original venture,
+is a <br>locationless, nationwide auto-care service. <br>
+</div>
+
+<!-- How it works-->
+<div class="rightpanel">
+    <h2>
+        How It Works
+    </h2>
+    Auto care like you've <br>never seen it before. 
+    Dualing <br>as roadside assistance<br> as well as a nationwide jobs program.<br>
+    Member or not, our platform<br> connects anyone in need<br> with a gig-worker mechanic. 
+    <br>Our system offers quick,<br> on-site repairs, as well<br> as a method of contracting <br>for the mechanically inclined. 
+</div>
+>>>>>>> Stashed changes
 </template>

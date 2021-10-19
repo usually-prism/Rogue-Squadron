@@ -1,6 +1,7 @@
 import { LightningElement, api } from 'lwc';
 
 const greetings = [
+<<<<<<< Updated upstream
     'Hello',
     'Bonjour',
     '你好',
@@ -13,6 +14,12 @@ const greetings = [
     'नमस्ते',
     '안녕하세요',
     'مرحبا'
+=======
+    'A Brand New Service',
+    'Modern Innovation in Practice',
+    'Tech takes on road-side assistance',
+    'Fix your car for low'
+>>>>>>> Stashed changes
 ];
 const SPEED_CLASS_MAP = {
     slow: 'fade-slow',

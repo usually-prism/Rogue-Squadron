@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class App extends LightningElement {
+<<<<<<< Updated upstream
     displayMarkup = true;
     teams = [
         {
@@ -24,4 +25,7 @@ export default class App extends LightningElement {
     changeDisplay() {
         this.displayMarkup = !this.displayMarkup;
     }
+=======
+  
+>>>>>>> Stashed changes
 }

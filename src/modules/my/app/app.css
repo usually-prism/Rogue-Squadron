@@ -13,6 +13,57 @@
     display: inline-block;
     margin-top: 1em;
 }
+<<<<<<< Updated upstream
+=======
+
+.ourstory{
+    float: right;
+    margin: 2rem;
+}
+
+.logo {
+    border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 5px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+}
+
+h1 {
+    font-family: Georgia, sans-serif;
+    font-size: 3em;
+    letter-spacing: -2px;
+  }
+
+  h2 {
+    font-family: Georgia, sans-serif;
+    font-size: 2em;
+    letter-spacing: -2px;
+  
+  }
+
+  .rightpanel{
+    float: left;
+    margin: 2rem;
+  }
+
+.buttin{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ff6000;
+    color: white;
+    margin-left: 33%;
+    margin-right: 33%;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+>>>>>>> Stashed changes
 .info {
     color: black;
     background-color: #e4f2f8;
@@ -36,3 +87,16 @@ img {
 .greeting {
     height: 75px;
 }
+<<<<<<< Updated upstream
+=======
+
+.kcards {
+    width: 80%; /* Try setting this to 400px or something */
+    display: table;
+    border: 1px solid #444444;
+}
+.kcard {
+    display: table-cell;
+}
+
+>>>>>>> Stashed changes
